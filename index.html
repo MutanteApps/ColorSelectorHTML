@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB color selector</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Color Selector</h1>
+    </header>
+
+    <main id="selectorSpace" oninput="set_bg_color()">
+        <table>
+            <tr>
+                <th>Red</th>
+                <th>Green</th>
+                <th>Blue</th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="range" name="Red" id="redRange" class="slider" min="0" max="255" value="255">
+                </td>
+                <td>
+                    <input type="range" name="Green" id="greenRange" class="slider" min="0" max="255" value="255">
+                </td>
+                <td> 
+                    <input type="range" name="Blue" id="blueRange" class="slider" min="0" max="255" value="255">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="showValue" id="redValue">255</p>
+                </td>
+                <td>
+                    <p class="showValue" id="greenValue">255</p>
+                </td>
+                <td>
+                    <p class="showValue" id="blueValue">255</p>
+                </td>
+            </tr>
+
+        </table>
+
+        
+        
+    </main>
+    <h6 onclick="copyHex()">Hex value: <span id="hexValue">000000</span></h6>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

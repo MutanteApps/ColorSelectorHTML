@@ -1,0 +1,90 @@
+.slider {
+    background: #ffffff;
+    border-radius: 10px;
+    border: #000000;
+    -webkit-appearance: none; /* Remover estilo padrão do slider no WebKit */
+    appearance: none;
+    outline: none; /* Remover borda ao focar */
+    opacity: 1; /* Transparência do slider */
+    transition: opacity 0.2s; /* Transição suave ao passar o mouse */
+    writing-mode: vertical-lr;
+    direction: rtl;
+    vertical-align: bottom;
+}
+
+.slider:hover {
+    opacity: 1; /* Totalmente opaco ao passar o mouse */
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remover estilo padrão do thumb no WebKit */
+    appearance: none;
+    width: 20px; /* Largura do thumb */
+    height: 20px; /* Altura do thumb */
+    background: var(--thumb-color, blue); /* Cor do thumb */
+    cursor: pointer; /* Mudar cursor ao passar o mouse sobre o thumb */
+    border-radius: 50%; /* Thumb circular */
+    border: #000000;
+    border-collapse: collapse;
+}
+
+
+.slider::-moz-range-thumb {
+    width: 20px; /* Largura do thumb */
+    height: 20px; /* Altura do thumb */
+    background: var(--thumb-color, blue); /* Cor do thumb */
+    cursor: pointer; /* Mudar cursor ao passar o mouse sobre o thumb */
+    border-radius: 50%; /* Thumb circular */
+}
+
+#redRange {
+    background: red;
+}
+
+#greenRange {
+    background: rgb(0, 255, 0);
+
+}
+
+#blueRange {
+    background: blue;
+}
+
+
+
+
+.showValue {
+    text-align: center;
+    text-decoration: dotted;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+td{
+    width: 30%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: auto;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: #ffffff;
+}
+
+
+
